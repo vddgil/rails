@@ -10,7 +10,7 @@ module TranslationIO
 end
 
 require 'translation_io/config'
-require 'translation_io/railtie'
+require 'translation_io/railtie' if defined?(Rails)
 require 'translation_io/client'
 require 'translation_io/flat_hash'
 require 'translation_io/yaml_conversion'
